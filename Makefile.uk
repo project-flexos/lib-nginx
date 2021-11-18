@@ -86,7 +86,7 @@ LIBNGINX_FLAGS = -Wpointer-arith -Werror
 LIBNGINX_FLAGS_SUPPRESS = -Wno-unused-parameter -Wno-unused-variable	\
 -Wno-unused-but-set-variable -Wno-unused-value
 
-LIBNGINX_CFLAGS-y +=  $(LIBNGINX_FLAGS)
+LIBNGINX_CFLAGS-y +=  $(LIBNGINX_FLAGS) $(LIBNGINX_CFLAGS_EXTRA)
 LIBNGINX_CFLAGS-y +=  $(LIBNGINX_FLAGS_SUPPRESS)
 
 # Rename the main function found in core/main.c to nginx_main
